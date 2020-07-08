@@ -1,0 +1,9 @@
+{
+  "name": "FishBoard",
+  "version": "0.0.1",
+  "description": "A project made to watch pisciculture data with an arduino system",
+  "main": "index.js",
+  "repository": "https://github.com/thlindustries/piscicultura",
+  "author": "ThlIndustries",
+  "license": "MIT"
+}
