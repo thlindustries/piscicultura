@@ -1,5 +1,3 @@
-Notion: https://www.notion.so/thlindustries/Piscicultura-a3a59193811040d5ab2282011cc8561a
-
 <h1 align="center">
     <img src="https://i.imgur.com/ceICOgl.png" width="400"/>
 </h1>
@@ -134,6 +132,9 @@ $ yarn dev:server
 <img alt="Made by Thlindustries" src="https://img.shields.io/github/followers/brunoJSX?style=social">
 - Bruno Henrique ->
 <img alt="Made by Thlindustries" src="https://img.shields.io/github/followers/glauberbalthazar83?style=social">
+
+## 💡 Ideas
+<img src="https://i.imgur.com/RpAx01c.jpg" width="40"/> :[Acesse nosso Notion](https://www.notion.so/thlindustries/Piscicultura-a3a59193811040d5ab2282011cc8561a) 
 
 ## 📝 Licença
 
