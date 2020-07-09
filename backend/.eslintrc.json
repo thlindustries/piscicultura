@@ -5,10 +5,10 @@
     "jest": true
   },
   "extends": [
+    "plugin:prettier/recommended",
     "airbnb-base",
     "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
-    "plugin:prettier/recommended"
+    "prettier/@typescript-eslint"
   ],
   "globals": {
     "Atomics": "readonly",
