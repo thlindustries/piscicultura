@@ -19,7 +19,7 @@
 
 ## 💻 Sobre o projeto
 
-🐟 FIshboard - é um projeto que tem por objetivo incentivar pequenos e médios produtores agrícolas a iniciarem criações de peixes, facilitando a visualização de variáveis sobre o tanque de criação e consequentemente oferecendo um feedback para que medidas preventivas ou ajustivas sejam tomadas para garantir uma maior eficiência no crescimento da geração . 
+🐟 Fishboard - é um projeto que tem por objetivo incentivar pequenos e médios produtores agrícolas a iniciarem criações de peixes, facilitando a visualização de variáveis sobre o tanque de criação e consequentemente oferecendo um feedback para que medidas preventivas ou ajustivas sejam tomadas para garantir uma maior eficiência no crescimento da geração . 
 
 O produtor pode se cadastrar na plataforma com as seguintes informações:
 - Nome do produtor
@@ -74,7 +74,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## 🚀 Como executar o projeto
 
-Podemos considerar este projeto como sendo divido em três partes:
+Podemos considerar este projeto como sendo divido em duas partes:
 1. Back End (pasta backend) 
 2. Mobile (pasta mobile)
 
