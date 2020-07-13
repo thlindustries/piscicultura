@@ -1,11 +1,21 @@
-import { Router, Request, Response } from 'express';
+import { Router } from 'express';
+import { celebrate, Segments, Joi } from 'celebrate';
+
+import SessionsController from '@modules/users/infra/http/controllers/SessionsController';
 
 const sessionRoutes = Router();
 
-sessionRoutes.get('/', (request: Request, response: Response) => {
-  const message = 'This is the sessions routes';
+const sessionsController = new SessionsController();
 
-  return response.json({ Info: message });
-});
+sessionRoutes.post(
+  '/',
+  celebrate({
+    [Segments.BODY]: {
+      email: Joi.string().required(),
+      password: Joi.string().required(),
+    },
+  }),
+  sessionsController.create,
+);
 
 export default sessionRoutes;
