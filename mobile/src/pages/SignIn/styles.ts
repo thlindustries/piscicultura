@@ -60,6 +60,5 @@ export const CreateAccountButton = styled.TouchableOpacity`
 
 export const FooterText = styled.Text`
   font-family: 'RobotoSlab-Regular';
-
   color: #656565;
 `;

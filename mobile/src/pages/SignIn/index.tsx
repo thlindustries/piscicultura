@@ -45,7 +45,6 @@ const SignIn: React.FC = () => {
         style={{ flex: 1 }}
         enabled
       >
-        {/* <SafeAreaView style={{ flex: 1 }}> */}
         <ScrollView
           keyboardShouldPersistTaps="handled"
           contentContainerStyle={{ flex: 1 }}
@@ -100,7 +99,6 @@ const SignIn: React.FC = () => {
           <Icon name="log-in" size={20} color="#656565" />
           <FooterText>Criar Conta</FooterText>
         </CreateAccountButton>
-        {/* </SafeAreaView> */}
       </KeyboardAvoidingView>
     </>
   );
