@@ -1,10 +1,12 @@
 import styled from 'styled-components/native';
 import { getBottomSpace } from 'react-native-iphone-x-helper';
 import { Platform } from 'react-native';
-import { RectButton } from 'react-native-gesture-handler';
 
 export const Container = styled.View`
   flex: 1;
+
+  align-items: center;
+  justify-content: center;
 
   padding: 0 30px ${Platform.OS === 'android' ? 120 : 40}px;
 `;
@@ -18,7 +20,7 @@ export const LoginCard = styled.View`
   width: 320px;
   height: 270px;
 
-  border-radius: 8px;
+  border-radius: 15px;
 
   align-self: center;
 
@@ -29,26 +31,12 @@ export const LoginCard = styled.View`
 
 export const LoginCardTitle = styled.Text`
   text-align: center;
-  margin-top: 16px;
 
   color: #ffffff;
   font-size: 24px;
-`;
-
-export const FormInput = styled.TextInput`
-  background: #fff;
-  margin-top: 24px;
-`;
-
-export const FormButton = styled(RectButton)`
-  background: #fff;
 
   margin-top: 12px;
-  border-radius: 12px;
-  align-self: center;
-
-  width: 50%;
-  height: 40px;
+  margin-bottom: 12px;
 `;
 
 export const CreateAccountButton = styled.TouchableOpacity`
