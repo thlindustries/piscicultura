@@ -15,6 +15,7 @@ import {
   FormInput,
   FormButton,
 } from './styles';
+import Button from '../../components/atoms/Button';
 
 import logoImg from '../../assets/logo.png';
 
@@ -41,7 +42,13 @@ const SignIn: React.FC = () => {
               <Form ref={formRef} onSubmit={handleSignIn}>
                 <FormInput />
                 <FormInput />
-                <FormButton />
+                <Button
+                  onPress={() => {
+                    console.log('apertou o botão');
+                  }}
+                >
+                  Entrar
+                </Button>
               </Form>
             </LoginCard>
           </Container>
