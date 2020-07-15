@@ -44,7 +44,7 @@ class SendForgotPasswordEmailService {
     await this.mailProvider.sendMail({
       to: {
         name: user.name,
-        email: email,
+        email,
       },
       subject: '[FishBoard] Recuperação de senha',
       templateData: {
