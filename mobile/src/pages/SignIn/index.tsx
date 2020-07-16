@@ -63,8 +63,6 @@ const SignIn: React.FC = () => {
           email: data.email,
           password: data.password,
         });
-
-        navigation.navigate('Dashboard');
       } catch (err) {
         if (err instanceof Yup.ValidationError) {
           const errors = getValidationErrors(err);
@@ -73,7 +71,7 @@ const SignIn: React.FC = () => {
         }
       }
     },
-    [navigation, signIn],
+    [signIn],
   );
 
   return (

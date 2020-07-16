@@ -54,6 +54,8 @@ export const TextInput = styled.TextInput`
   color: #464646;
   font-size: 16px;
   font-family: 'RobotoSlab-Regular';
+
+  margin-right: 20px;
 `;
 
 export const Icon = styled(FeatherIcon)`
