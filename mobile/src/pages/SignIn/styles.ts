@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { RectButton } from 'react-native-gesture-handler';
 import { getBottomSpace } from 'react-native-iphone-x-helper';
 import { Platform } from 'react-native';
 
@@ -16,7 +17,6 @@ export const LogoContainer = styled.View`
 `;
 
 export const LoginCard = styled.View`
-  border: 1px solid #000;
   width: 320px;
   height: 270px;
 
@@ -39,7 +39,7 @@ export const LoginCardTitle = styled.Text`
   margin-bottom: 12px;
 `;
 
-export const CreateAccountButton = styled.TouchableOpacity`
+export const CreateAccountButton = styled(RectButton)`
   position: absolute;
 
   left: 0;
