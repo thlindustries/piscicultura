@@ -11,7 +11,7 @@ import api from '../services/api';
 interface User {
   id: string;
   avatar_url: string;
-  nome: string;
+  name: string;
   email: string;
 }
 
@@ -25,7 +25,7 @@ interface AuthContextData {
 
 interface Login {
   email: string;
-  senha: string;
+  password: string;
 }
 
 interface UserLoginData {
@@ -42,8 +42,8 @@ export const AuthProvider: React.FC = ({ children }) => {
   useEffect(() => {
     async function loadStorageData(): Promise<void> {
       const [user, token] = await AsyncStorage.multiGet([
-        '@GoBarber:user',
-        '@GoBarber:token',
+        '@FishBoard:user',
+        '@FishBoard:token',
       ]);
 
       if (user[1] && token[1]) {
@@ -56,10 +56,10 @@ export const AuthProvider: React.FC = ({ children }) => {
     loadStorageData();
   }, []);
 
-  const signIn = useCallback(async ({ email, senha }) => {
-    const response = await api.post('/sessoes', {
+  const signIn = useCallback(async ({ email, password }) => {
+    const response = await api.post('/sessions', {
       email,
-      senha,
+      password,
     });
 
     const { user, token } = response.data;
@@ -67,8 +67,8 @@ export const AuthProvider: React.FC = ({ children }) => {
     api.defaults.headers.authorization = `Bearer ${token}`;
 
     await AsyncStorage.multiSet([
-      ['@GoBarber:token', token],
-      ['@GoBarber:user', JSON.stringify(user)],
+      ['@FishBoard:token', token],
+      ['@FishBoard:user', JSON.stringify(user)],
     ]);
 
     setData({
@@ -78,14 +78,14 @@ export const AuthProvider: React.FC = ({ children }) => {
   }, []);
 
   const signOut = useCallback(async () => {
-    await AsyncStorage.multiRemove(['@GoBarber:token', '@GoBarber:user']);
+    await AsyncStorage.multiRemove(['@FishBoard:token', '@FishBoard:user']);
 
     setData({} as UserLoginData);
   }, []);
 
   const updateUser = useCallback(
     async (user: User) => {
-      await AsyncStorage.setItem('@GoBarber:user', JSON.stringify(user));
+      await AsyncStorage.setItem('@FishBoard:user', JSON.stringify(user));
 
       setData({
         token: data.token,
