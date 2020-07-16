@@ -2,17 +2,16 @@ import React, { useRef, useCallback } from 'react';
 import {
   Image,
   ScrollView,
-  SafeAreaView,
   TextInput,
   KeyboardAvoidingView,
   Platform,
   View,
-  Keyboard,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
 
 import { Form } from '@unform/mobile';
 import { FormHandles } from '@unform/core';
+import { useNavigation } from '@react-navigation/native';
 
 import {
   Container,
@@ -31,6 +30,7 @@ import Button from '../../components/atoms/Button';
 // import getValidationErrors from '../../utils/getValidationErrors';
 
 const SignIn: React.FC = () => {
+  const navigation = useNavigation();
   const formRef = useRef<FormHandles>(null);
   const passwordInputRef = useRef<TextInput>(null);
 
@@ -95,7 +95,7 @@ const SignIn: React.FC = () => {
             </LoginCard>
           </Container>
         </ScrollView>
-        <CreateAccountButton>
+        <CreateAccountButton onPress={() => navigation.navigate('SignUp')}>
           <Icon name="log-in" size={20} color="#656565" />
           <FooterText>Criar Conta</FooterText>
         </CreateAccountButton>
