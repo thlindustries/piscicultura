@@ -43,8 +43,14 @@ const TestChart: React.FC<iData> = ({ data }) => {
   console.log(data);
   return (
     <Container>
-      <VictoryChart width={350} theme={VictoryTheme.material}>
-        <VictoryLine data={data} />
+      <VictoryChart width={300} height={300} theme={VictoryTheme.material}>
+        <VictoryLine
+          animate={{
+            duration: 2000,
+            onLoad: { duration: 1000 },
+          }}
+          data={data}
+        />
       </VictoryChart>
     </Container>
   );

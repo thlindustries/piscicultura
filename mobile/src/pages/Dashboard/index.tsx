@@ -15,6 +15,7 @@ interface iData {
 const Dashboard: React.FC = () => {
   const { signOut } = useAuth();
 
+  const [update, setUpdate] = useState(false);
   const [data, setData] = useState([
     { x: 1, y: 13000 },
     { x: 2, y: 16500 },
@@ -22,13 +23,24 @@ const Dashboard: React.FC = () => {
     { x: 4, y: 19000 },
   ]);
   const handleChangeData = useCallback(() => {
-    setData([
-      { x: 1, y: 13200 },
-      { x: 2, y: 16000 },
-      { x: 3, y: 14150 },
-      { x: 4, y: 15000 },
-    ]);
-  }, []);
+    if (update) {
+      setData([
+        { x: 1, y: 13000 },
+        { x: 2, y: 16500 },
+        { x: 3, y: 14250 },
+        { x: 4, y: 19000 },
+      ]);
+    } else {
+      setData([
+        { x: 1, y: 13200 },
+        { x: 2, y: 16000 },
+        { x: 3, y: 14150 },
+        { x: 4, y: 15000 },
+      ]);
+    }
+
+    setUpdate(!update);
+  }, [update]);
 
   return (
     <Container>
