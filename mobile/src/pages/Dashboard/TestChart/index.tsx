@@ -14,7 +14,6 @@ interface iData {
 }
 
 const TestChart: React.FC<iData> = ({ data }) => {
-  //console.log(data);
   return (
     <Container>
       <VictoryChart width={300} height={300} theme={VictoryTheme.material}>

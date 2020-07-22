@@ -1,5 +1,6 @@
 import React from 'react';
 import { RectButtonProperties } from 'react-native-gesture-handler';
+import { Animated } from 'react-native';
 
 import { Container, ButtonText } from './styles';
 

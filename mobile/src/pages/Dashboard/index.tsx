@@ -4,6 +4,7 @@ import { Container } from './styles';
 
 import LineChartTest from './TestChart';
 import Button from '../../components/atoms/Button';
+import Header from '../../components/mols/Header';
 
 import { useAuth } from '../../hooks/auth';
 
@@ -44,7 +45,7 @@ const Dashboard: React.FC = () => {
 
   return (
     <Container>
-      {/* <Text>Esta é a página do dashboard</Text> */}
+      <Header>oi</Header>
       <LineChartTest data={data} />
       <Button onPress={handleChangeData}>Teste atualização</Button>
     </Container>
