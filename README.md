@@ -64,13 +64,12 @@ O layout da aplicação está disponível no Figma:
 - **ATENÇÃO:** Aqui você pode ver alguns gifs que foram feitos em teste de campo, os quais demonstrar o funcionamento do protótipo eletrônico
 
 <p align="center">
-  
-  <img alt="Fishboard" title="#Fishboard" src="https://i.imgur.com/s4shR9k.gif" width="200px">
-
-  <img alt="Fishboard" title="#Fishboard" src="https://i.imgur.com/t2hCgWR.gif" width="200px">
-
-  <img alt="Fishboard" title="#Fishboard" src="https://i.imgur.com/8WazBxx.gif" width="240px">  
-  
+	<strong>GIF 1</strong>
+	<p>https://i.imgur.com/s4shR9k.gifv</p>
+	<strong>GIF 2</strong>
+	<p>https://i.imgur.com/t2hCgWR.gifv</p>
+	<strong>GIF 3</strong>
+	<p>https://i.imgur.com/8WazBxx.gifv</p
 </p>
 
 
