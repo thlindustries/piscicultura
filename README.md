@@ -56,9 +56,22 @@ O layout da aplicação está disponível no Figma:
 
   <img alt="Fishboard" title="#Fishboard" src="https://i.imgur.com/nrH4ob1.png" width="200px">
 
-  <img alt="Fishboard" title="#Fishboard" src="https://i.imgur.com/qx0MfjO.png" width="200px">  
+  <img alt="Fishboard" title="#Fishboard" src="https://i.imgur.com/c4UZr1T.gif" width="240px">  
+  
 </p>
 
+## Funcionamento do protótipo
+- **ATENÇÃO:** Aqui você pode ver alguns gifs que foram feitos em teste de campo, os quais demonstrar o funcionamento do protótipo eletrônico
+
+<p align="center">
+  
+  <img alt="Fishboard" title="#Fishboard" src="https://i.imgur.com/s4shR9k.gif" width="200px">
+
+  <img alt="Fishboard" title="#Fishboard" src="https://i.imgur.com/t2hCgWR.gif" width="200px">
+
+  <img alt="Fishboard" title="#Fishboard" src="https://i.imgur.com/8WazBxx.gif" width="240px">  
+  
+</p>
 
 
 ## 🛠 Tecnologias
